@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './output'
+                sh './wrong_output'
             }
         }
         stage('Deploy') {

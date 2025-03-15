@@ -17,9 +17,16 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh './output'
+            }
+        }
+        /* Wrong output code
+        stage('Test') {
+            steps {
                 sh './wrong_output'
             }
         }
+        */
         stage('Deploy') {
             steps {
                 echo 'deploy'
